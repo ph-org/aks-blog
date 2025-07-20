@@ -9,5 +9,5 @@ output "kube_config" {
 }
 
 output "principal_id" {
-  value = azurerm_kubernetes_cluster.aks_01.identity[0].principal_id
+  value = azurerm_kubernetes_cluster.aks_01.kubelet_identity[0].object_id
 }
